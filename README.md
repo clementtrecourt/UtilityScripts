@@ -1,58 +1,45 @@
-👋 Bienvenue dans helpfull-scripts! 🛠️
+# 🛠️ Helpful Scripts & Utilities
 
-Ceci est une collection organisée de scripts divers et utiles conçus pour automatiser les tâches quotidiennes, rationaliser la configuration et vous rendre la vie un peu plus facile. Pensez-y comme à votre couteau suisse numérique ! 🔪
-🚀 Scripts dans ce Dépôt
-Fichier	Langage	Objectif	Emojis
-confluence_get.py	Python	Récupérateur de Données Confluence : Un script puissant pour interagir avec l'API Confluence, parfait pour récupérer, exporter ou sauvegarder des pages, des pièces jointes ou des données spécifiques de votre instance Confluence. 📄➡️💾	🐍 Atlassian
-create_grafana_user.sh	Shell	Provisionneur d'Utilisateurs Grafana : Automatise la création de nouveaux utilisateurs sur votre serveur Grafana. Un gain de temps pour l'intégration ou les configurations d'infrastructure-as-code ! 👤✨	🐚 Grafana
-sav-creator.py	Python	Créateur de Données Personnalisées : Un utilitaire pour générer ou manipuler des fichiers .sav (souvent utilisés pour les sauvegardes de données ou des configurations système spécifiques). Utilisez-le pour configurer rapidement des données de sauvegarde de base. 📝🧱	🔧💾
-⚙️ Démarrage Rapide
+Bienvenue sur ce dépôt ! Il regroupe une collection de scripts **Python** et **Bash** conçus pour l'automatisation de tâches administratives, la gestion de monitoring et le support.
 
-    Cloner le Dépôt :
-    code Bash
+## 📂 Contenu du Dépôt
 
-    
-git clone https://github.com/clementtrecourt/helpfull-scripts.git
-cd helpfull-scripts
+Voici la liste des outils disponibles :
 
-  
+### 1. 📘 `confluence_get.py`
+> **Automatisation Confluence**
+Ce script Python permet d'interagir avec l'API d'Atlassian Confluence.
+- **Fonctionnalité :** Récupération de pages, d'espaces ou de contenus spécifiques depuis votre instance Confluence.
+- **Utilisation :** Export de documentation, sauvegarde ou analyse de contenu.
 
-Prérequis :
+### 2. 📊 `create_grafana_user.sh`
+> **Administration Grafana**
+Un script Shell (Bash) pour faciliter la gestion des utilisateurs sur Grafana.
+- **Fonctionnalité :** Création rapide d'utilisateurs via l'API ou CLI Grafana.
+- **Avantage :** Automatise l'onboarding de nouveaux membres dans vos dashboards.
 
-    Scripts Python (.py) : Assurez-vous d'avoir Python 3 installé. Vous pourriez avoir besoin d'installer des bibliothèques spécifiques (par exemple, requests pour les appels d'API). Vérifiez les entêtes des scripts pour les dépendances !
+### 3. 🔧 `sav-creator.py`
+> **Gestion S.A.V (Service Après-Vente)**
+Script Python dédié à la création ou la gestion de tickets/dossiers SAV.
+- **Fonctionnalité :** Génération automatique de dossiers de support ou formatage de données pour le service client.
 
-    Scripts Shell (.sh) : Assurez-vous simplement que le script dispose des permissions d'exécution :
-    code Bash
+---
 
-        
-    chmod +x create_grafana_user.sh
+## 🚀 Prérequis
 
-      
+Avant d'utiliser ces scripts, assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
-Exécuter un Script :
-code Bash
+*   🐍 **Python 3.x** (pour les fichiers `.py`)
+*   💻 **Bash/Shell** (Linux/macOS ou WSL pour le fichier `.sh`)
+*   📦 **Dépendances Python** (si nécessaire, installez-les via pip) :
+    ```bash
+    pip install requests
+    # Ajoutez ici d'autres librairies si vos scripts en utilisent
+    ```
 
-        
-    # Exemple pour le script Grafana
-    ./create_grafana_user.sh --username "new-dev" --email "dev@example.com"
+## ⚙️ Installation & Utilisation
 
-    # Exemple pour le script Confluence
-    python confluence_get.py --page-id 12345 --output-format markdown
-
-      
-
-🌟 Contributions
-
-Vous avez un petit script utile qui vous fait gagner du temps ? Nous serions ravis de le voir !
-
-    Forkez le dépôt.
-
-    Créez votre branche de fonctionnalité (git checkout -b feature/ScriptGenial).
-
-    Commitez vos modifications (git commit -m 'Ajout d'un script génial pour X').
-
-    Poussez vers la branche (git push origin feature/ScriptGenial).
-
-    Ouvrez une demande de tirage (Pull Request) ! 🎉
-
-Joyeux Scripting ! 🧑‍💻✨
+1. **Cloner le dépôt :**
+   ```bash
+   git clone https://github.com/clementtrecourt/helpfull-scripts.git
+   cd helpfull-scripts
