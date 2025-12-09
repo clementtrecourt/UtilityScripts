@@ -1,58 +1,58 @@
-🚀 UtilityScripts
+👋 Bienvenue dans helpfull-scripts! 🛠️
 
-Une collection de scripts pratiques pour automatiser et simplifier des tâches du quotidien DevOps / Admin système.
-Ce dépôt regroupe plusieurs utilitaires que j’utilise régulièrement — simples, rapides, efficaces 💡
+Ceci est une collection organisée de scripts divers et utiles conçus pour automatiser les tâches quotidiennes, rationaliser la configuration et vous rendre la vie un peu plus facile. Pensez-y comme à votre couteau suisse numérique ! 🔪
+🚀 Scripts dans ce Dépôt
+Fichier	Langage	Objectif	Emojis
+confluence_get.py	Python	Récupérateur de Données Confluence : Un script puissant pour interagir avec l'API Confluence, parfait pour récupérer, exporter ou sauvegarder des pages, des pièces jointes ou des données spécifiques de votre instance Confluence. 📄➡️💾	🐍 Atlassian
+create_grafana_user.sh	Shell	Provisionneur d'Utilisateurs Grafana : Automatise la création de nouveaux utilisateurs sur votre serveur Grafana. Un gain de temps pour l'intégration ou les configurations d'infrastructure-as-code ! 👤✨	🐚 Grafana
+sav-creator.py	Python	Créateur de Données Personnalisées : Un utilitaire pour générer ou manipuler des fichiers .sav (souvent utilisés pour les sauvegardes de données ou des configurations système spécifiques). Utilisez-le pour configurer rapidement des données de sauvegarde de base. 📝🧱	🔧💾
+⚙️ Démarrage Rapide
 
-📁 Contenu du repo
-📝 confluence_get.py
+    Cloner le Dépôt :
+    code Bash
 
-Script Python permettant de récupérer du contenu Confluence via l’API.
-👉 Utile pour : extraction automatique, sauvegarde de pages, génération de rapports.
+    
+git clone https://github.com/clementtrecourt/helpfull-scripts.git
+cd helpfull-scripts
 
-👤 create_grafana_user.sh
+  
 
-Script bash pour créer un utilisateur Grafana via l’API.
-👉 Idéal pour automatiser l’onboarding ou la gestion des accès.
+Prérequis :
 
-🧱 sav-creator.py
+    Scripts Python (.py) : Assurez-vous d'avoir Python 3 installé. Vous pourriez avoir besoin d'installer des bibliothèques spécifiques (par exemple, requests pour les appels d'API). Vérifiez les entêtes des scripts pour les dépendances !
 
-Générateur automatique de fichiers SAV ou de structures associées (selon ton contexte).
-👉 Parfait pour standardiser et accélérer la création de fichiers de configuration.
+    Scripts Shell (.sh) : Assurez-vous simplement que le script dispose des permissions d'exécution :
+    code Bash
 
-🔧 Prérequis
+        
+    chmod +x create_grafana_user.sh
 
-Selon les scripts :
+      
 
-Python 3.x 🐍
+Exécuter un Script :
+code Bash
 
-Bibliothèques Python (requests, etc.) 📦
+        
+    # Exemple pour le script Grafana
+    ./create_grafana_user.sh --username "new-dev" --email "dev@example.com"
 
-cURL ou wget pour les scripts shell 🌐
+    # Exemple pour le script Confluence
+    python confluence_get.py --page-id 12345 --output-format markdown
 
-Accès API (Grafana, Confluence) 🔑
+      
 
-🚀 Installation & Utilisation
+🌟 Contributions
 
-Clone le dépôt :
+Vous avez un petit script utile qui vous fait gagner du temps ? Nous serions ravis de le voir !
 
-git clone https://github.com/clementtrecourt/UtilityScripts.git
-cd UtilityScripts
+    Forkez le dépôt.
 
+    Créez votre branche de fonctionnalité (git checkout -b feature/ScriptGenial).
 
-Exécute un script :
+    Commitez vos modifications (git commit -m 'Ajout d'un script génial pour X').
 
-python3 confluence_get.py
+    Poussez vers la branche (git push origin feature/ScriptGenial).
 
+    Ouvrez une demande de tirage (Pull Request) ! 🎉
 
-ou
-
-bash create_grafana_user.sh
-
-🤝 Contributions
-
-Les contributions sont les bienvenues !
-Propose une issue, une PR ou une amélioration ✨
-
-📜 Licence
-
-🛡️ MIT License – libre d’utiliser, modifier et partager.
+Joyeux Scripting ! 🧑‍💻✨
