@@ -22,6 +22,9 @@ Un script Shell (Bash) pour faciliter la gestion des utilisateurs sur Grafana.
 > **Gestion S.A.V (Service Après-Vente)**
 Script Python dédié à la création ou la gestion de tickets/dossiers SAV.
 - **Fonctionnalité :** Génération automatique de dossiers de support ou formatage de données pour le service client.
+### 3. 🔧 `firstdiag.sh`
+> **Premier Diagnostique**
+  curl -s https://raw.githubusercontent.com/clementtrecourt/UtilityScripts/refs/heads/main/firstdiag.sh | sudo bash
 
 ---
 

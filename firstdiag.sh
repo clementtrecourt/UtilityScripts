@@ -54,8 +54,11 @@ echo -e "Modèle          : ${CYAN}$MODEL${NC}"
 echo -e "Uptime          : $(uptime -p)"
 
 NTP_STATUS=$(timedatectl show -p NTPSynchronized --value 2>/dev/null)
+NTP_SERVER=$(timedatectl show-timesync --property=ServerName --value 2>/dev/null)
+
 if [[ "$NTP_STATUS" == "yes" ]]; then
   echo -e "Synchro Heure   : ${GREEN}OK (NTP Actif)${NC}"
+  [[ -n "$NTP_SERVER" ]] && echo -e "Serveur NTP     : ${GREEN}$NTP_SERVER${NC}"
 else
   echo -e "Synchro Heure   : ${YELLOW}Inactif ou Non géré par systemd${NC}"
 fi
